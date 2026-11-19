@@ -41,7 +41,7 @@ Length.
 
 <img width="571" height="442" alt="Screenshot 2026-11-19 234555" src="https://github.com/user-attachments/assets/3dcd28e8-1277-4911-904a-7b6d51a26e60" />
 
-Step 4: Cut the Through Hole 
+## Step 4: Cut the Through Hole 
 1. Select Create Sketch and click on the outer flat side face of 
 one of the fork arms. 
 2. Select the Circle tool (C), hover over the outer semicircular 
