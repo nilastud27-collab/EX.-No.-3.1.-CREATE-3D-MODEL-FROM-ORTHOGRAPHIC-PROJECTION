@@ -11,31 +11,73 @@ To create a 3D model from given orthographic projection.
 4. 2.5 Mbps or faster download; 500 Kbps or faster upload 
 
 ## PROCEDURE:
-1.	Open new file and then select sketch icon.
-2.	Select the plane for sketching. 
-3.	Use sketching features (line, circle, arc, rectangle, polygon, etc.,) to draw the given sketch.
 
-![image](https://user-images.githubusercontent.com/113594316/198551199-8d9b7f6c-6ea7-4d59-8e8c-173f2b5e088f.png)
+## Step 1: Initial Setup 
+1. Open Autodesk Fusion 360 and start a new design (File > 
+New Design). 
+2. In the Browser tree on the left, expand Document Settings 
+and verify that the active units are set to Millimeters (mm).
 
-4.	Use sketch modifying features (cut, trim, mirror, move, etc.,) to edit the sketch.
+## Step 2: Sketch the U-Shaped Fork Profile (Top View) 
+1. Select Create Sketch and choose the XY Plane (Top plane). 
+2. Use the Line tool (L) to draw the outer U-shaped boundary of 
+the fork: 
+○ Draw a vertical back edge of 40 mm ( 11 + 18 + 11𝑚𝑚)
+○ From both ends, draw horizontal lines extending 52 mm to the left. 
+○ From each left tip, draw inward vertical lines of 11 mm. 
+○ From those endpoints, draw inward horizontal lines of 41 mm (52 − 11𝑚𝑚) to the right. 
+○ Connect the two inner endpoints with a vertical line of 18 
+mm to close the U-shape. 
+3. Click Finish Sketch
 
-![image](https://user-images.githubusercontent.com/113594316/198551220-c7aa6694-4427-48e2-9d91-cd7e9615d651.png)
+<img width="597" height="381" alt="Screenshot 2026-11-19 234549" src="https://github.com/user-attachments/assets/b61f8c0e-b122-41f4-9e88-d7d2ba956757" />
 
-5.	Use inspect feature to measure the dimensions of sketch.
+## Step 3: Extrude the Fork Body 
+1. Select the Extrude tool (E). 
+2. Click the closed U-shaped profile. 
+3. Set the Direction to Symmetric and Measurement to Whole 
+Length. 
+4. Enter a height of 32 mm and click OK.
 
-![image](https://user-images.githubusercontent.com/113594316/198551270-45875855-43a7-4471-af35-bd10cd9dd153.png)
+<img width="571" height="442" alt="Screenshot 2026-11-19 234555" src="https://github.com/user-attachments/assets/3dcd28e8-1277-4911-904a-7b6d51a26e60" />
 
-6.	After finishing the sketch use finish sketch option to finalize the sketch.
+Step 4: Cut the Through Hole 
+1. Select Create Sketch and click on the outer flat side face of 
+one of the fork arms. 
+2. Select the Circle tool (C), hover over the outer semicircular 
+edge to snap to its center point, and draw a circle of diameter 
+16 mm (Ø16). 
+3. Click Finish Sketch. 
+4. Select Extrude (E), select the 16 mm circle profile, set 
+Operation to Cut, set Extent Type to All (cutting through 
+both fork arms), and click OK.
 
-![image](https://user-images.githubusercontent.com/113594316/198551309-8d7ac6c8-6740-479f-8186-195c89823fda.png)
+<img width="595" height="355" alt="Screenshot 2026-11-19 234601" src="https://github.com/user-attachments/assets/6af7931d-3f37-4076-91ea-d2ad24ea8c25" />
+<img width="616" height="445" alt="Screenshot 2026-11-19 234611" src="https://github.com/user-attachments/assets/64cd6c6c-6082-4394-9b5c-29c7e138bdc0" />
 
-7.	Use extrude option to convert 3D model from sketch
+## Step 5: Round the Fork Ends (Front View) 
+1. Select the Fillet tool (F). 
+2. Select all 4 vertical/horizontal outer edges at the left tips of 
+the two fork arms (top-left and bottom-left edges of both 
+prongs). 
+3. Enter a radius of 16 mm (R16) to form the full semicircular 
+ends and click OK. 
+(Alternatively, you can select Create Sketch on the outer side 
+face of a prong, draw the R16 arc, and Extrude > Cut the 
+corners).
 
-![image](https://user-images.githubusercontent.com/113594316/198551340-fe1f3b48-df79-44ef-a4ae-ff1cd22503ea.png)
+<img width="606" height="415" alt="Screenshot 2026-11-19 234618" src="https://github.com/user-attachments/assets/78b38494-83ab-4776-a4c1-67a741cc3ff0" />
 
-8.	After finishing the model convert to drawing sheet per  ISO standard.
+## Step 6: Create the Cylindrical Shaft (Right View) 
+1. Select Create Sketch and click on the back vertical face  of the fork block. 40𝑚𝑚 × 32𝑚𝑚
+2. Draw a Circle (C) of diameter 18 mm (Ø18) at the exact 
+center of the face ( 20𝑚𝑚 from the side edges and  16𝑚𝑚from the top/bottom edges). 
+3. Click Finish Sketch. 
+4. Select Extrude (E), select the 18 mm circle, set Operation to 
+Join, enter a distance of 32 mm outward, and click OK.
 
-![image](https://user-images.githubusercontent.com/113594316/198551370-54509915-ec69-4862-9c17-156d61a83b11.png)
+<img width="572" height="463" alt="Screenshot 2026-11-19 234622" src="https://github.com/user-attachments/assets/dcbbb9eb-ce09-41c5-b195-ac2c16ac8d87" />
+<img width="605" height="403" alt="Screenshot 2026-11-19 234627" src="https://github.com/user-attachments/assets/549f3698-eb85-481e-8618-23a093e4fa35" />
 
 ## INPUT:
 ![image](https://user-images.githubusercontent.com/113594316/198551872-276f8b80-bea8-4d4a-b2e8-bfdcd1e9d3cc.png)
